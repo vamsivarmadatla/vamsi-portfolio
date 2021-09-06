@@ -1,23 +1,12 @@
-import React, { useEffect, useState } from "react";
-import {
-  Container,
-  Button,
-  Form,
-  FormControl,
-  Row,
-  Col,
-  Card,
-  InputGroup,
-} from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Button, Form, Row, Col } from "react-bootstrap";
 import "./Contact.css";
 import "./ContactRes.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelopeOpen,
-  faGraduationCap,
   faPhoneSquareAlt,
-  faTimesCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
@@ -25,7 +14,7 @@ import {
   faTelegramPlane,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { TextareaAutosize } from "@material-ui/core";
+
 import { db } from "../../firebase";
 import ContactAlert from "../popupAlert/contactAlert/ContactAlert";
 
@@ -47,7 +36,6 @@ const Contact = () => {
       })
       .then(() => {
         setLoader(false);
-        // alert("Your message has been submitted👍");
         setContactAlertShow(true);
         setFormValues({
           name: "",
@@ -85,14 +73,9 @@ const Contact = () => {
     });
   };
 
-  const handleContactAlert = (e) => {
-    e.preventDefault();
-    setContactAlertShow(true);
-  };
-
   return (
     <>
-      <Row className="noPadding contact-row">
+      <Row className="noPadding main-background">
         <Col className="noPadding mt-4">
           <Container>
             <div>
@@ -142,7 +125,7 @@ const Contact = () => {
                       <a
                         className="social-icon"
                         target="_blank"
-                        rel="nofollow"
+                        rel="noreferrer"
                         href="https://www.facebook.com/vamsivarma.d"
                       >
                         <FontAwesomeIcon icon={faFacebookF} />
@@ -152,7 +135,7 @@ const Contact = () => {
                       <a
                         className="social-icon"
                         target="_blank"
-                        rel="nofollow"
+                        rel="noreferrer"
                         href="https://www.instagram.com/vamsivarma_datla_/"
                       >
                         <FontAwesomeIcon icon={faInstagram} />
@@ -162,7 +145,7 @@ const Contact = () => {
                       <a
                         className="social-icon"
                         target="_blank"
-                        rel="nofollow"
+                        rel="noreferrer"
                         href="https://twitter.com/vamsivarmadatla"
                       >
                         <FontAwesomeIcon icon={faTwitter} />
@@ -235,9 +218,7 @@ const Contact = () => {
                       <Button
                         variant="outline-warning"
                         className="download-cv"
-                        // style={{ background: loader ? "#ccc" : " rgb(2, 2, 110)" }}
                         type="submit"
-                        // onClick={handleContactAlert}
                       >
                         SEND MESSAGE
                         <div className="downloadcv-icon">

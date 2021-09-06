@@ -3,15 +3,13 @@ import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import "./Home.css";
 import "./HomeRes.css";
 import MainImage from "../../assets/images/vamsi-photo1.png";
-// import MainImage1 from "../../assets/images/vamsi-photo.jpeg";
-
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Home = () => {
   return (
     <>
-      <Row className="noPadding aboutme-row">
+      <Row className="noPadding main-background">
         <Col className="noPadding">
           <Container>
             <div className="aboutme-personal  mt-2">

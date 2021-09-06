@@ -10,7 +10,6 @@ var firebaseApp = firebase.initializeApp({
   projectId: "vamsi-portfolio-313f3",
   storageBucket: "vamsi-portfolio-313f3.appspot.com",
   messagingSenderId: "261201919214",
-  appId: "1:261201919214:web:190a68254c5c119c8d47ff",
 });
 
 var db = firebaseApp.firestore();

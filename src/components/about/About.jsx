@@ -12,7 +12,7 @@ import resume from "../../assets/vamsi-resume.pdf";
 const About = () => {
   return (
     <>
-      <Row className="noPadding aboutme-row">
+      <Row className="noPadding main-background">
         <Col className="noPadding mt-5">
           <Container>
             <div className="aboutme-title">

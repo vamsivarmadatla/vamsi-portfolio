@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -10,15 +10,16 @@ import About from "./components/about";
 import MySkills from "./components/myskills";
 import ExpeEdu from "./components/expeEdu";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
     <Home />
     <About />
     <MySkills />
     <ExpeEdu />
     <Contact />
+    <Footer />
   </React.StrictMode>,
   document.getElementById("root")
 );

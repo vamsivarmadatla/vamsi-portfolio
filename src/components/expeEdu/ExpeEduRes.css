@@ -1,0 +1,53 @@
+@media only screen and (min-width: 270px) and (max-width: 320px) {
+  .expe-font-icon {
+    width: 40% !important ;
+  }
+  .edu-font-icon {
+    width: 54% !important ;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .expe-font-icon {
+    width: 27% !important ;
+  }
+  .edu-font-icon {
+    width: 35% !important ;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .expe-font-icon {
+    width: 20% !important ;
+  }
+  .edu-font-icon {
+    width: 25% !important ;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 480px) {
+  .expe-font-icon {
+    width: 15% !important ;
+  }
+  .edu-font-icon {
+    width: 20% !important ;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .expe-font-icon {
+    width: 9% !important ;
+  }
+  .edu-font-icon {
+    width: 7% !important ;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .expe-font-icon {
+    width: 14% !important ;
+  }
+  .edu-font-icon {
+    width: 15% !important ;
+  }
+}

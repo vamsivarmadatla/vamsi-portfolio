@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "./MySkills.css";
@@ -11,7 +11,7 @@ const MySkills = () => {
     trailColor: "#252525",
   };
   return (
-    <Row className="noPadding myskills-row">
+    <Row className="noPadding main-background">
       <Col className="noPadding">
         <Container>
           <div className="myskills-title mt-4">
@@ -84,7 +84,7 @@ const MySkills = () => {
                   styles={buildStyles(Styles)}
                   className="progress-circle mb-2"
                 />
-                <p className="progress-text">REACT</p>
+                <p className="progress-text">REACT JS</p>
               </div>
             </Col>
           </Row>
