@@ -1,0 +1,129 @@
+.ExpeEdu-row {
+  background-color: #111111 !important;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.ExpeEdu-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #fdb532;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.ExpeEdu-row .font-icon::before {
+  height: 150px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+  border-left: 1px solid #fdb532;
+  opacity: 0.6;
+}
+
+/* experince styles */
+
+.experince-section {
+  display: inline-flex;
+}
+
+.font-icon {
+  width: 70px !important;
+  height: 40px !important;
+  left: 0;
+  margin-right: 10px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #fdb532;
+  position: relative;
+}
+
+.experince {
+  margin-left: 20px !important;
+}
+
+.experince-year {
+  color: #fff;
+  font-size: 12px;
+  padding: 1px 10px;
+  display: inline-block;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  background-color: #252525;
+  opacity: 0.8;
+}
+
+.experince-company {
+  opacity: 0.8;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+  padding-left: 26px;
+}
+.experince-company::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #fff;
+  left: 7px;
+  top: 9px;
+  opacity: 0.8;
+}
+
+.experince-text {
+  font-size: 15px;
+  text-align: justify !important;
+}
+
+/* education styles */
+
+.education-section {
+  display: inline-flex;
+}
+
+.education {
+  margin-left: 20px !important;
+}
+
+.education-year {
+  color: #fff;
+  font-size: 12px;
+  padding: 1px 10px;
+  display: inline-block;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  background-color: #252525;
+  opacity: 0.8;
+}
+
+.education-colg {
+  opacity: 0.8;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+  padding-left: 26px;
+}
+
+.education-colg::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #fff;
+  left: 7px;
+  top: 9px;
+  opacity: 0.8;
+}
+
+.education-text {
+  font-size: 15px;
+  text-align: justify !important;
+}

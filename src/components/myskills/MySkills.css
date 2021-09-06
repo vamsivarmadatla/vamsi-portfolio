@@ -1,0 +1,46 @@
+.myskills-row {
+  background-color: #111111 !important;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.myskills-title {
+  font-size: 56px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.myskills-title span {
+  font-size: 56px;
+  font-weight: 900;
+  color: #fdb532;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.progress-card {
+  width: 100%;
+  text-align: center !important;
+}
+
+.progress-circle {
+  height: 150px !important;
+  width: 150px !important;
+  /* position: relative; */
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.progress-text {
+  /* position: absolute; */
+  /* margin-left: 35px; */
+
+  /* text-align: center !important; */
+  font-family: "Open Sans", sans-serif;
+}

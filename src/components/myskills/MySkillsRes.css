@@ -1,0 +1,5 @@
+@media only screen and (min-width: 270px) and (max-width: 575px) {
+  .myskills-title {
+    margin-top: -30px !important;
+  }
+}

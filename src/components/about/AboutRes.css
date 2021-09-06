@@ -1,0 +1,36 @@
+@media only screen and (min-width: 270px) and (max-width: 575px) {
+  .aboutme-title {
+    margin-top: -30px !important;
+  }
+
+  /* .download-cv {
+    padding: 16px 65px 16px 16px;
+    transition: 250ms all ease-in-out;
+    line-height: 1.4;
+    border-radius: 35px;
+    color: #fff;
+    background-color: transparent;
+    font-weight: 900;
+    position: relative;
+    
+  } */
+}
+
+@media only screen and (max-width: 290px) {
+  .download-cv {
+    padding: 16px 65px 16px 16px;
+    transition: 250ms all ease-in-out;
+    line-height: 1.4;
+    border-radius: 35px;
+    color: #fff;
+    background-color: transparent;
+    font-weight: 900;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .aboutme-personal-col2 {
+    margin-left: -45px;
+  }
+}

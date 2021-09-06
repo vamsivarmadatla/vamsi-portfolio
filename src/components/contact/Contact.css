@@ -1,0 +1,134 @@
+.contact-row {
+  background-color: #111111 !important;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.contact-title {
+  font-size: 56px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.contact-title span {
+  font-size: 56px;
+  font-weight: 900;
+  color: #fdb532;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* .contact-sub-title {
+  font-size: 24px !important;
+  color: #fff;
+  font-family: "TTCommons-DemiBold", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-weight: normal !important;
+} */
+
+.contact-form {
+  border: 1px solid #111;
+  width: 100%;
+  background: #252525;
+  color: #fff;
+  padding: 11px 26px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  outline: none !important;
+  transition: 0.3s;
+}
+
+.contact-form:active {
+  border: 1px solid #ffb400;
+  width: 100%;
+  background: #252525;
+  color: #fff;
+  padding: 11px 26px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  outline: none !important;
+  transition: 0.3s;
+}
+
+.contact-form:focus {
+  border: 1px solid #ffb400;
+  background: #252525;
+  color: #fff;
+}
+
+.social-icon-row {
+  display: flex;
+}
+
+.social-icon {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s;
+  font-size: 20px;
+  margin-right: 20px;
+  background: #2b2a2a;
+  border-radius: 50%;
+}
+
+.social-icon:hover {
+  color: #fff;
+  background-color: #fdb532;
+  cursor: pointer;
+}
+
+.email-section {
+  display: inline-flex;
+}
+
+.email-section-font-icon {
+  left: 0;
+  right: 0;
+  line-height: 60px;
+  color: #fdb532;
+  position: relative;
+  font-size: 37px;
+}
+
+.call-section-font-icon {
+  left: 0;
+  right: 0;
+  line-height: 60px;
+  color: #fdb532;
+  position: relative;
+  font-size: 40px;
+}
+
+.email-contact {
+  margin-left: 16px !important;
+  font-size: 15px !important;
+  font-weight: 600;
+  line-height: 20px;
+  margin-top: 8px;
+}
+
+.email-contact-name {
+  text-transform: uppercase;
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.email-contact-text {
+  color: #eee;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.contact-text {
+  text-align: justify;
+}
