@@ -31,7 +31,7 @@ const ExpeEdu = () => {
                     <p className="experince-text">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy.
+                      standard.
                     </p>
                   </div>
                 </div>
