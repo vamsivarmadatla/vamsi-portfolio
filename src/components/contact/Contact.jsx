@@ -5,6 +5,7 @@ import "./ContactRes.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faArrowUp,
   faEnvelopeOpen,
   faPhoneSquareAlt,
 } from "@fortawesome/free-solid-svg-icons";
@@ -17,23 +18,29 @@ import {
 
 import { db } from "../../firebase";
 import ContactAlert from "../popupAlert/contactAlert/ContactAlert";
+import { CircularProgress } from "@material-ui/core";
+import Loader from "../loader/Loader";
 
 const Contact = () => {
   const [loader, setLoader] = useState(false);
   const [formValues, setFormValues] = useState("");
   const [contactAlertShow, setContactAlertShow] = useState(false);
+  const [saveLoader, setSaveLoader] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoader(true);
+    setSaveLoader(true);
+
+    const data = {
+      name: formValues.name,
+      email: formValues.email,
+      phone: formValues.phone,
+      message: formValues.message,
+    };
 
     db.collection("contacts")
-      .add({
-        name: formValues.name,
-        email: formValues.email,
-        phone: formValues.phone,
-        message: formValues.message,
-      })
+      .add(data)
       .then(() => {
         setLoader(false);
         setContactAlertShow(true);
@@ -43,14 +50,24 @@ const Contact = () => {
           phone: "",
           message: "",
         });
+        setSaveLoader(false);
       })
       .catch((error) => {
-        alert(error.message);
-        console.log(error);
+        setSaveLoader(false);
         setLoader(false);
         setContactAlertShow(false);
       });
   };
+
+  // if (!formValues.first) {
+  //   document.getElementById("name").style.borderColor = "red";
+  // } else if (!formValues.last) {
+  //   document.getElementById("email").style.borderColor = "red";
+  // } else if (!formValues.phone) {
+  //   document.getElementById("phone").style.borderColor = "red";
+  // } else if (!formValues.email) {
+  //   document.getElementById("message").style.borderColor = "red";
+  // } else { }
 
   const onChange = (event) => {
     const { name, value } = event.target;
@@ -71,6 +88,11 @@ const Contact = () => {
       ...formValues,
       [name]: value,
     });
+  };
+
+  const handleScrollTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   };
 
   return (
@@ -168,8 +190,9 @@ const Contact = () => {
                             type="text"
                             name="name"
                             id="name"
-                            placeholder="YOUR NAME"
+                            placeholder="YOUR NAME *"
                             value={formValues.name}
+                            required
                           />
                         </Form.Group>
                       </Col>
@@ -180,8 +203,9 @@ const Contact = () => {
                             type="email"
                             name="email"
                             id="email"
-                            placeholder="YOUR EMAIL"
+                            placeholder="YOUR EMAIL *"
                             value={formValues.email}
+                            required
                           />
                         </Form.Group>
                       </Col>
@@ -192,10 +216,11 @@ const Contact = () => {
                             type="phone"
                             name="phone"
                             id="phone"
-                            placeholder="YOUR PHONE"
+                            placeholder="YOUR PHONE *"
                             value={formValues.phone}
                             pattern="[0-9]*"
                             inputmode="tel"
+                            required
                           />
                         </Form.Group>
                       </Col>
@@ -208,27 +233,42 @@ const Contact = () => {
                           type="text"
                           name="message"
                           id="message"
-                          placeholder="YOUR MESSAGE"
+                          placeholder="YOUR MESSAGE *"
                           rows="5"
                           value={formValues.message}
+                          required
                         />
                       </Form.Group>
                     </Row>
-                    <div className="downloadcv-section">
-                      <Button
-                        variant="outline-warning"
-                        className="download-cv"
-                        type="submit"
-                      >
-                        SEND MESSAGE
-                        <div className="downloadcv-icon">
-                          <FontAwesomeIcon icon={faTelegramPlane} />
-                        </div>
-                      </Button>
-                    </div>
+                    {saveLoader ? (
+                      <>
+                        <CircularProgress
+                          classes="loader-circle"
+                          thickness="6"
+                          color="green"
+                          size={30}
+                        />
+                      </>
+                    ) : (
+                      <div className="downloadcv-section">
+                        <Button
+                          variant="outline-warning"
+                          className="download-cv"
+                          type="submit"
+                        >
+                          SEND MESSAGE
+                          <div className="downloadcv-icon">
+                            <FontAwesomeIcon icon={faTelegramPlane} />
+                          </div>
+                        </Button>
+                      </div>
+                    )}
                   </Form>
                 </Col>
               </Row>
+            </div>
+            <div className="scroll-top mb-4" onClick={handleScrollTop}>
+              <FontAwesomeIcon icon={faArrowUp} />
             </div>
           </Container>
         </Col>

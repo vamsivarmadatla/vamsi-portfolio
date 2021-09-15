@@ -15,7 +15,7 @@ const About = () => {
       <Row className="noPadding main-background">
         <Col className="noPadding mt-5">
           <Container>
-            <div className="aboutme-title">
+            <div className="aboutme-title" id="aboutme">
               ABOUT <span> ME</span>
             </div>
 

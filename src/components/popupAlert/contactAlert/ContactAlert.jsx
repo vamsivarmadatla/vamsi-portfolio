@@ -12,9 +12,6 @@ const ContactAlert = (props) => {
         keyboard={false}
         className="contact-modal"
       >
-        <Modal.Header>
-          <Modal.Title>Thank You!</Modal.Title>
-        </Modal.Header>
         <Modal.Body className="contact-alert-text">Thank You!</Modal.Body>
         <Modal.Footer>
           <button

@@ -7,11 +7,13 @@ function Footer() {
     <div className="noPadding main-background">
       <Container>
         <Row>
-          <Col className="mt-3">
-            <hr />
-            <p className="copyright">
-              Copyright ©2021 Vamsi-Varma | All Rights Reserved
-            </p>
+          <Col className="mt-5">
+            <div className="footer">
+              <hr />
+              <p className="copyright">
+                Copyright ©2021 Vamsi-Varma | All Rights Reserved
+              </p>
+            </div>
           </Col>
         </Row>
       </Container>

@@ -17,7 +17,7 @@ const ExpeEdu = () => {
             <Row className=" mt-4 mb-4">
               <Col lg={6} className="expeEdu-font-icon-col">
                 <div className="ExpeEdu-title mt-5 mb-5">EXPERIENCE</div>
-                <div className="experince-section mt-5">
+                <div className="experince-section">
                   <div className="expe-font-icon expeEdu">
                     <FontAwesomeIcon icon={faBriefcase} />
                   </div>
@@ -38,7 +38,7 @@ const ExpeEdu = () => {
               </Col>
               <Col lg={6} className="expeEdu-font-icon-col">
                 <div className="ExpeEdu-title mt-5 mb-5">EDUCATION</div>
-                <div className="education-section mt-5">
+                <div className="education-section">
                   <div className="edu-font-icon expeEdu">
                     <FontAwesomeIcon icon={faGraduationCap} />
                   </div>

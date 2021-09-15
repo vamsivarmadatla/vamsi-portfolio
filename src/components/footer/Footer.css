@@ -1,5 +1,9 @@
+/* .footer {
+  margin-top: 90px;
+} */
+
 .copyright {
   text-align: center;
-  margin-bottom: 10px;
   font-size: 14px;
+  margin: 20px 0;
 }

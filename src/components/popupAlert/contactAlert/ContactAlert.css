@@ -1,7 +1,7 @@
 .contact-modal .modal-dialog {
   width: 100% !important;
-  max-width: 600px !important;
   margin-top: 120px !important;
+  border: 2px solid #fff;
 }
 
 .contact-alert-text {
@@ -10,10 +10,11 @@
   font-size: 25px !important;
   font-weight: 700 !important;
   border-bottom: none !important;
+  text-align: center !important;
 }
 
 .pop-close-button {
-  padding: 16px 35px;
+  padding: 12px 25px;
   transition: 250ms all ease-in-out;
   line-height: 1.4;
   border-radius: 35px;

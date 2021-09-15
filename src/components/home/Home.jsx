@@ -7,6 +7,10 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Home = () => {
+  const handleMoreAbout = () => {
+    const scrollTarget = document.getElementById("aboutme");
+    scrollTarget.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
       <Row className="noPadding main-background">
@@ -37,7 +41,11 @@ const Home = () => {
                   </div>
 
                   <div className="downloadcv-section">
-                    <Button variant="outline-warning" className="download-cv">
+                    <Button
+                      variant="outline-warning"
+                      className="download-cv"
+                      onClick={handleMoreAbout}
+                    >
                       MORE ABOUT ME
                       <div className="downloadcv-icon">
                         <FontAwesomeIcon icon={faArrowRight} />
