@@ -28,15 +28,15 @@ const Home = () => {
                   <div className="mt-5">
                     <h1 className="home-section-title">I'M VAMSI VARMA.</h1>
                     <span className="home-section-title-span">
-                      web designer
+                      web developer
                     </span>
                   </div>
                   <div>
                     <p className="home-section-text">
-                      I'm a Vamsi based web designer & front‑end developer
-                      focused on crafting clean & user‑friendly experiences, I
-                      am passionate about building excellent software that
-                      improves the lives of those around me.
+                      I'm a Vamsi based front‑end web developer focused on
+                      crafting clean & user‑friendly experiences, I am
+                      passionate about building excellent software that improves
+                      the lives of those around me.
                     </p>
                   </div>
 

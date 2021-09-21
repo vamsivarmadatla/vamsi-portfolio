@@ -24,17 +24,18 @@ const About = () => {
               <Row className="mt-4 mb-4">
                 <Col sm={6} lg={3} className=" mb-2">
                   <p className="aboutme-personal-info">
-                    First Name : <span>Vamsi Varma</span>
+                    Full Name : <span>Vamsi Varma Datla</span>
                   </p>
-                  <p className="aboutme-personal-info">
-                    Last Name : <span>Datla</span>
-                  </p>
+
                   <p className="aboutme-personal-info">
                     Age : <span>25 Years</span>
                   </p>
 
                   <p className="aboutme-personal-info">
                     Nationality : <span>Indian</span>
+                  </p>
+                  <p className="aboutme-personal-info">
+                    Marital Status : <span>Single</span>
                   </p>
                   <p className="aboutme-personal-info">
                     Freelance : <span>Available</span>
