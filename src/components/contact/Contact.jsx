@@ -21,6 +21,8 @@ import ContactAlert from "../popupAlert/contactAlert/ContactAlert";
 import { CircularProgress } from "@material-ui/core";
 import Loader from "../loader/Loader";
 
+import emailjs from "emailjs-com";
+
 const Contact = () => {
   const [loader, setLoader] = useState(false);
   const [formValues, setFormValues] = useState("");
@@ -31,6 +33,22 @@ const Contact = () => {
     e.preventDefault();
     setLoader(true);
     setSaveLoader(true);
+
+    emailjs
+      .sendForm(
+        "service_j3qm28y",
+        "template_wnun0vl",
+        e.target,
+        "user_NzQnK2nZJ05bbAGFEDNQx"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     const data = {
       name: formValues.name,
@@ -59,30 +77,8 @@ const Contact = () => {
       });
   };
 
-  // if (!formValues.first) {
-  //   document.getElementById("name").style.borderColor = "red";
-  // } else if (!formValues.last) {
-  //   document.getElementById("email").style.borderColor = "red";
-  // } else if (!formValues.phone) {
-  //   document.getElementById("phone").style.borderColor = "red";
-  // } else if (!formValues.email) {
-  //   document.getElementById("message").style.borderColor = "red";
-  // } else { }
-
   const onChange = (event) => {
     const { name, value } = event.target;
-    // const nom = /^[0-9]+$/;
-
-    // if (event.target.name === "phone" && !event.target.value.match(nom)) {
-    //   // alert('dddddddddd')
-    //   event.target.name = event.target.value.replace(/^[A-Za-z]+$/gi, "");
-    //   console.log("formValues.name", value);
-
-    //   setFormValues({
-    //     ...formValues,
-    //     [name]: value,
-    //   });
-    // } else
 
     setFormValues({
       ...formValues,
@@ -220,7 +216,6 @@ const Contact = () => {
                             value={formValues.phone}
                             pattern="[0-9]*"
                             inputmode="tel"
-                            required
                           />
                         </Form.Group>
                       </Col>
