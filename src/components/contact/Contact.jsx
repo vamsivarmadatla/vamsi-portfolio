@@ -154,7 +154,7 @@ const Contact = () => {
                         className="social-icon"
                         target="_blank"
                         rel="noreferrer"
-                        href="https://www.instagram.com/vamsivarmaofficial/"
+                        href="https://www.instagram.com/vamsivarmadatla_/"
                       >
                         <FontAwesomeIcon icon={faInstagram} />
                       </a>
